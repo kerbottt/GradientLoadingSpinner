@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(to bottom right, magenta, cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.red {
+  background: linear-gradient(to right, red, orange);
+}
+
+.blue {
+  background: linear-gradient(to right, blue, aqua);
+}
+
+.green {
+  background: linear-gradient(to right, green, lime);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
